@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    max-width: 100px;
+    margin: 0 0;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background-color: rgb(240, 15, 15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    z-index: 1;
+    /* Ensure navbar appears above content */
+    margin: 0;
+    /* Remove any left margin */
+    padding: 0;
+    /* Remove any padding */
+    @media only screen and (max-width: 600px) {
+        display: block;
+    }
+}
+
+nav * {
+    display: inline;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav li a {
+    color: rgb(250, 249, 249);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    @media only screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+}
+
+nav ul li a:hover {
+    color: #9007ac;
+    left: 0%;
+}
+
+.banner-image {
+    width: 100%;
+    height: 50%;
+    margin-top: 80px;
+    background: url(images/bannern.jpg) no-repeat center center;
+}
+
+.content img {
+    display: block;
+    margin: auto auto 0;
+    max-width: 2000px;
+}
+
+.content {
+    text-align: center;
+    background-size: cover;
+    color: aliceblue;
+    font-size: 35px;
+    line-height: 2;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+}
+
+.content img:hover {
+    opacity: 0.5;
+}
+
+.follow-text {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    margin: 20px auto;
+    /* Center the text horizontally and provide top margin */
+    max-width: 80%;
+    /* Limit the width to prevent text overflow */
+}
+
+.w-text {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    margin: auto auto;
+    /* Center the text horizontally and provide top margin */
+    max-width: 80%;
+    /* Limit the width to prevent text overflow */
+}
+
+.r-text {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    margin: auto auto;
+    /* Center the text horizontally and provide top margin */
+    max-width: 80%;
+    /* Limit the width to prevent text overflow */
+}
+
+.f-text {
+    font-family: Comic Sans MS, Comic Sans;
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    margin: 20px auto;
+    /* Center the text horizontally and provide top margin */
+    max-width: 100%;
+    /* Limit the width to prevent text overflow */
+}
+
+.f-text span {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.department-text {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    /* Decrease font size */
+    text-align: center;
+    line-height: 1;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    margin: 10px auto 0;
+    /* Center the text horizontally and provide top margin */
+    max-width: 80%;
+    /* Limit the width to prevent text overflow */
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeathon2.0 - Rules</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .content{
+            background: url("images/berlin2.jpg") no-repeat center center ;
+            background-size:cover;
+            position: relative; /* Ensure positioning for overlay */
+            overflow: hidden; /* Hide overflowing blur effect */
+        }
+        
+        .content::before {
+            content: ''; /* Create a pseudo-element */
+            position: absolute; /* Position the pseudo-element */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit; /* Inherit background from parent */
+            filter: blur(10px); /* Apply blur effect */
+        }
+        
+        .content p,
+        .content img,
+        .content a {
+            position: relative; /* Ensure content appears above blur layer */
+            color: white; /* Adjust text color as needed */
+        }
+        .content img{
+            width:200px;
+        }
+        .r-text span {
+            font-size: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="songs/professor.mp3" allow="autoplay" style="display: none;"
+    id="songs" frameborder="0"></iframe>
+    <div class="background-image">
+        <img src="images/bannern.jpg" alt="Contact Banner" class="banner-image" >
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="join.html">Join Here</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="winners.html">Winners</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="content">
+        <p class="r-text">
+            <span style="font-size: 50px; font-style: bold; textalign:center">Rules:</span>
+            <br>
+            <br>
+            <span>General</span><br>
+            ●	All contestants are required to present a valid student identification card.<br>
+            ●	Contestants are advised not to discuss the problems they are assigned with other contestants.<br>
+            ●	Referee will be assigned to observe teams throughout the contest and report any problems and/or violations of the rules to the Contest Committee.<br>
+            ●	Any violation of rules will subject to elimination of contestant.<br>
+            <br>
+            <span>Programming Environment</span><br>
+            ●	Each team should bring their individual laptops and must  write and test their programs on that machine, wholely within the contest room.<br>
+            ●	Each team is requested to bring one switch  box / extention box.<br>
+            ●	Each team can have maximum of 3 members.<br>
+            ●	We encourage you to bring  any tools you need to complete the tasks.<br>
+            ●	Contestants may use any technology on the selected theme.<br>
+            ●	Contestants may not seek hints and/or ask for leads during the contest.<br>
+            ●	Atleast  One  team member should always  engaged with implementations.<br>
+            ●	Food and snacks will be provided.<br>
+            ●	Accomodation for final contestants will be provided only on 22nd March.<br>
+            <br>
+            <span>Evaluation of Contestants' Programs</span><br>
+            ●	All the teams will be given the problem statement to solve based on the theme and domain selected.<br>
+            ●	Experts will review the implementation and will ask the participants to make changes.<br>
+            ●	The Contest Committee will tally the scores for each team and publish the winners. The Contest Committee's decision in all matters is final.<br>
+            <br><br>   
+            <br><span></span>
+        </p>
+        <a href="join.html" class="instagram-icon" target="_blank">
+            <img src="images/ready.png" alt="Register">
+        </a>
+    </div>
+</body>
+</html>

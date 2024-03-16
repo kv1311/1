@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeathon2.0 - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .content{
+            background: url('images/lisbon.jpg') no-repeat center center;
+            background-size:cover;
+            position: relative; /* Ensure positioning for overlay */
+            overflow: hidden; /* Hide overflowing blur effect */
+        }
+        
+        .content::before {
+            content: ''; /* Create a pseudo-element */
+            position: absolute; /* Position the pseudo-element */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit; /* Inherit background from parent */
+            filter: blur(5px); /* Apply blur effect */
+        }
+        
+        .content p,
+        .content img,
+        .content a {
+            position: relative; /* Ensure content appears above blur layer */
+         /* Ensure content appears above blur layer */
+            color: white; /* Adjust text color as needed */
+        }
+        .instagram-icon img,
+        .follow-text img {
+            width: 400px; /* Adjust width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .content img{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="songs/lisbon.mp3" allow="autoplay" style="display: none;" id="songs" frameborder="0"></iframe>
+    <audio src="" autoplay="autoplay" id="Audio">
+        <source src="songs/lisbon.mp3">
+    </audio>
+    <div class="background-image">
+        <img src="images/bannern.jpg" alt="Contact Banner" class="banner-image" ></div>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="join.html">Join Here</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="winners.html">Winners</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+            <div class="content">
+                <strong> Contact Us </strong>
+                <br>
+                <p class="department-text">
+                    Department of Computer Science and Engineering<br>
+                </p>
+                <p class="follow-text">
+                    <span style="font-size: 35px; font-style: bold;">For Any kind of assistance !!!</span>
+                    <br><br>Contact: <br><br> 
+                    Student Coordinator: <br>Mr. Pugazhenthi - +91 9384279072<br><br>
+                    Student Coordinator: <br>Mr. Prathap Kumar - +91 9786819498
+                    <br><br> Staff Coordinator: Ms. Gunasundari - +91 9843358385 <br><br> 
+                    <br><span>Follow Us on:</span>
+                </p>
+                <a href="https://www.instagram.com/codeathon.pec" class="instagram-icon" target="_blank">
+                    <img src="images/insta_logo.png" alt="Instagram">
+                </a>
+            </div>
+</body>
+</html>
